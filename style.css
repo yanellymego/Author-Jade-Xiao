@@ -1,0 +1,354 @@
+body {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f9f9f9;
+    color: #222;
+
+    /* For accent colors */
+    /* color: #e74c3c */
+    /* color: #c0392b */
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+
+/* Reset browser spacing */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-header {
+    background-color: #c34942;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.menu-header h1{
+    color: white;
+    margin: 10px;
+}
+
+.menu-header nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown container */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Style the dropdown button to match nav links */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c34942; /* same as header for consistency */
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* positions it below the button */
+    left: 0;
+    text-align: left;
+
+    padding: 10px 0; /* ← This creates breathing room inside the box */
+}
+
+/* Style dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Hover effects */
+.dropdown-content a:hover {
+    background-color: #a73d39; /* slightly darker red for hover */
+}
+
+/* Show the dropdown when hovering over .dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Optional: hover effect for dropdown tab */
+.dropdown:hover .dropbtn {
+    background-color: #a73d39;
+}
+
+.book-cover {
+  width: 320px;
+  height: auto; /* keeps the aspect ratio */
+  border-radius: 8px; /* optional styling */
+  text-align: center;
+}
+
+.side-by-side {
+  display: flex;
+  align-items: center; /* vertically align */
+  justify-content: space-between;
+  gap: 20px; /* optional spacing between */
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+
+.image-content img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Button styling */
+.image-button {
+  display: inline-block;
+  width: 170px;
+  margin-top: 12px;
+  padding: 15px 20px;
+  background-color: #c34942;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.image-button:hover {
+  background-color: #a73d39;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.all-books {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    /* padding-left: 100px; */
+}
+
+.all-books img:hover {
+  transform: scale(1.05);
+}
+
+.bio-paragraph {
+    display: flex;
+    max-width: 900px;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.bio-paragraph img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logos {
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.logos img {
+    width: 10px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    /* background-color: #ffffff; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.icon-circle img {
+    width: 20px;
+    height: auto;
+}
+
+.icon-circle:hover {
+    background-color: rgba(223, 198, 198, 0.2); /* reddish-gray with transparency */
+}
+
+
+.countdown-container {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 80px auto;
+  color: #352b2a;
+}
+
+#countdown {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* General nav link styles */
+.menu-header nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+/* Hover effect for ALL nav links (not just dropdown) */
+.menu-header nav a:hover {
+  background-color: #a73d39;
+}
+
+
+
+/*                            */
+/*These come from Google Fonts*/
+/*                            */ 
+.ibm-plex-serif-thin {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-extralight {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-light {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-medium {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-semibold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-bold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.ibm-plex-serif-thin-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-extralight-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-light-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-regular-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-medium-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-semibold-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+  
+.ibm-plex-serif-bold-italic {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+  

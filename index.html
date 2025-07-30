@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Home </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/peach-blossom-icon.PNG">
+    </head>
+    <body>
+        <div class ="menu-header">
+            <h1>Jade Xiao</h1>
+            <br/>
+            <nav>
+                <a href="index.html">Home</a> |
+
+                <div class="dropdown">
+                    <a href="books.html" class="dropbtn">Books</a> |
+                    <div class="dropdown-content">
+                    <a href="books/the-crimson-moon-and-the-white-sea.html">The Crimson Moon and the White Sea</a>
+                    <!-- <a href="#">Book #2</a> -->
+                    </div>
+                </div>
+               
+                <a href="about.html">About</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="countdown-container">
+            <h2>Book Release Countdown</h2>
+            <div id="countdown">
+                <span id="days">00</span> days  
+                <span id="hours">00</span> hours  
+                <span id="minutes">00</span> minutes  
+                <span id="seconds">00</span> seconds
+            </div>
+            <a style="margin-top: 50px;" href="books/the-crimson-moon-and-the-white-sea.html" class="image-button">Step Into the World</a></br>
+        </div>
+        <script src="countdown.js"></script>
+    </body>
+</html>
